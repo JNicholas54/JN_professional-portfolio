@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <!-- some things to add in future: colorblind asst: screen reader capability: -->
+    <head>
+        <meta charset="utf-8">
+        <title>Jeremy Nicholas - Portfolio</title>
+        <link rel="shortcut icon" href="./images/CF website_favicon (48x48).png">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>  
+
+    <body>
+        
+        <header class="page-header">
+            <!-- Add your logo here! -->
+            <img src="images/jeremy_logo.jpg" alt="logo" class="page-header__item">
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                    </li>
+                    <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
+                    </li>
+                    </li>
+                    <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+                    </li>
+                    </li>
+                    <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+          </header>
+          <hr color="#000">
+
+        <main class="profile">
+
+            <!-- be sure to clean this up, and add desirable information for your active portfolio -->
+            <h1 class="contact_info">Contact</h1>
+            <div class="contact_info">
+                Jeremy Nicholas<br>
+                Northern California<br>
+                United States<br>
+                <br>
+                Phone: <a href="tel:8144107467">Available Upon Request</a><br>
+                Skype: <a href="live:jernicholas54">live:jernicholas54</a><br>
+                Email: <a href="jernicholas54@gmail.com">jernicholas54@gmail.com</a><br>
+                <br>
+                <a href="mailto:jernicholas@gmail.com">Click Here To Contact Me</a><br>                
+            </div>
+
+            <div class="contact_info">
+                <form action="" method="post" id="contact-form">
+                    <label class="standard-label" for="contact-email">*E-mail: </label>
+                    <input type="email" id="contact-email" required>
+                    <br>
+                    <label class="standard-label" for="telephone">Telephone: </label>
+                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone">
+                    <br>
+                    <label class="standard-label" for="message">Message: </label>
+                    <!-- figure out how to add the counter so that people can see how many characters are allowed '0/240' -->
+                    <textarea maxlength="240" id="message" required></textarea>
+                    <br>
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+           
+        </main>
+
+        <footer class="page-footer">
+            <!--try to add some flair to this paragraph in the future, maybe use a span-->
+            <p>
+                Find me on
+            </p>
+            <div class="social_links"> 
+                <!--- adjust link to your personal profile -->
+                <a href="https://github.com" target="_blank"><img class="icon" src="images/github_icon.svg" alt="Github"></a>
+                <!-- adjust link to your personal profile -->
+                <a href="https://linkedin.com" target="_blank"><img class="icon" src="images/linkedin_icon.svg" alt="Linkedin"></a>
+                <!-- adjust link to your personal profile -->
+                <a href="https://twitter.com" target="_blank"><img class="icon" src="images/twitter_icon.svg" alt="Twitter"></a>
+            </div> 
+        </footer>
+        
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
