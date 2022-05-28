@@ -84,6 +84,7 @@ a:active {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .page-header {
