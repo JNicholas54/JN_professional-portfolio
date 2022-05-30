@@ -175,11 +175,11 @@ button, .button {
 }
 
 /* STILL UNSUCCESSFUL - would like to get some animation onto the social_links. need to figure out logo animations
-    I temporarily solved the problem... refer to '.icon' styling for homebrew fix! */
+    I temporarily solved the problem... refer to '.icon' styling for homebrew fix!
 .social_links {
-  align-items: baseline;
-  box-sizing: border-box;
+
 }
+*/
 
 .contact_info {
   text-align: center;
