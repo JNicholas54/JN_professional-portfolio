@@ -177,7 +177,7 @@ button, .button {
 /* STILL UNSUCCESSFUL - would like to get some animation onto the social_links. need to figure out logo animations
     I temporarily solved the problem... refer to '.icon' styling for homebrew fix! */
 .social_links {
-  animation: pulse;
+  align-content: flex-end;
 }
 
 .contact_info {
@@ -299,4 +299,56 @@ button, .button {
     height: 100%;
 
 **** the html used in example was just a div containing <a>Home</a> etc.. Also in the example the html class is set to "container lime pull-up" while the css code begins with "div.pullup" how can they be different and represent the same class?****    
-}/*
+}
+
+**************************************** PROJECT-IMAGE-WRAPPER_text from sublime portfolio *****************************************
+this is code I wrote while following a breif intro course before joining career foundry, the goal is to use this as reference while building a unique but similar styling to my VS Code.
+
+.projects-heading {
+	text-align: center;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.project-image-wrapper {
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.project-image {
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+	transition: all ease in-out .2s;
+}
+
+.project-image:hover {
+	filter: brightness(.75);
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+.project-image-wrapper:hover > h4 {
+	visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	visibility: hidden;
+	z-index: 2;
+	transition: all ease-in-out .2s;
+}
+
+@media (max-width: 650px) {
+	.projects-grid {
+		grid-template-columns: 100%;
+	}
+}
+
+/*
