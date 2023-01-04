@@ -216,7 +216,7 @@ button, .button {
 @supports (display: grid) {
   .project_list /*in CF this is the .grid*/{
     display: grid;
-    /* grid-template-colimns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+    /* grid-template-colimns: 300px 300px 300px; fractions(below) are better than pixels - they are responsive */
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
