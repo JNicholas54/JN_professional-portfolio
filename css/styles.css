@@ -17,7 +17,7 @@ secondary color (red): #darkred;
   --primary-color-darker: var(--primary-color, 20%);
   --bg-color: #fff;
   --apricot: #FFC482;
-  --dark-red: #9d0208;
+  --dark-red: #065535;
   --button-color: #357b70;
   --button-color-lighter: var(--button-color, 15%);
   --box-shadow: rgb(0,0,0,0.3);
@@ -81,24 +81,43 @@ h1 {
   
   /*============================================ anchor tag css below ============================================*/
   a {
-    color: var(--primary-color-lighter);
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      #065535 75%,
+      #065535 50%,
+      #065535 25%,
+      #065535
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
   }
   
-  a:visited {
-    /* visited link */
-    color: var(--primary-color);
-}
-
-a:hover, a:focus {
-  /*No underlining when hobering ovet a link */
-  text-decoration: none;
-  color: var(--box-shadow);
-}
-
-a:active {
-    /* selected link */
-    color: #FFC482;
-}
+  a:before{
+    content: '';
+    background: #065535;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
 /*============================================ anchor tag css above ============================================*/
 
 .profile__text {
