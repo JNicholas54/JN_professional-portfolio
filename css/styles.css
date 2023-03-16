@@ -28,20 +28,17 @@ secondary color (red): #darkred;
 }
 
 
-a {
-  color: var(--primary-color-lighter);
-}
 
 body {
-    background-color: var(--bg-color);
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.6;
-  }
+  background-color: var(--bg-color);
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
-  h1 {
-    text-align: center;
+h1 {
+  text-align: center;
     font-size: 30px;
     font-weight: 700;
     font-variant: small-caps;
@@ -59,7 +56,7 @@ body {
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
-
+  
   h2:hover {
     filter: brightness(100%);
 	  box-shadow: inset 470px 0 0 0 #065535;
@@ -70,34 +67,39 @@ body {
     font-size: 18px;
     font-weight: 700;
   }
-
+  
   p {
     font-size: 18px;
     text-align: center;
   }
-
+  
   hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
-
-
-a:visited {
+  
+  /*============================================ anchor tag css below ============================================*/
+  a {
+    color: var(--primary-color-lighter);
+  }
+  
+  a:visited {
     /* visited link */
     color: var(--primary-color);
 }
 
 a:hover, a:focus {
-    /*No underlining when hobering ovet a link */
-    text-decoration: none;
-    color: var(--box-shadow);
+  /*No underlining when hobering ovet a link */
+  text-decoration: none;
+  color: var(--box-shadow);
 }
 
 a:active {
     /* selected link */
     color: #FFC482;
 }
+/*============================================ anchor tag css above ============================================*/
 
 .profile__text {
   flex: 1 1 100px;
