@@ -204,7 +204,7 @@ button, .button {
   text-align: center;
   color: #065535;
 }
-
+/*============================================================================== work.html css below ================================================================================================ */
 /*start grid fallback*/
 .project {
   display: inline-block;
@@ -230,7 +230,6 @@ button, .button {
   min-height: auto;
   margin: 0px;
 }
-
 
 .project:last-child {
   grid-column: 3/3;
@@ -259,7 +258,7 @@ button, .button {
     font-size: 22px;
   }
 }
-
+/*============================================================================== work.html css above ================================================================================================ */
 @keyframes color-change {
   0% {
     fill: #edc655;
