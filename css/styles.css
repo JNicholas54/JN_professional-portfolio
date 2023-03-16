@@ -29,7 +29,7 @@ secondary color (red): #darkred;
 
 
 a {
-  color: var(--apricot);
+  color: var(--primary-color-lighter);
 }
 
 body {
@@ -49,7 +49,10 @@ body {
   
   h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: underline;
   }
   
   h3 {
@@ -59,6 +62,7 @@ body {
 
   p {
     font-size: 18px;
+    text-align: center;
   }
 
   hr {
@@ -229,6 +233,8 @@ button, .button {
   width: auto;
   min-height: auto;
   margin: 0px;
+  border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
 }
 
 .project:last-child {
