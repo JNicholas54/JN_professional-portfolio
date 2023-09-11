@@ -1,118 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- some things to add in future: colorblind asst: screen reader capability: -->
-    <head>
-        <meta charset="utf-8">
-        <title>Jeremy Nicholas - Portfolio</title>
-        <link rel="shortcut icon" href="./images/CF_HTML_favicon.png">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>    
+  <!-- some things to add in future: colorblind asst: screen reader capability: -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeremy Nicholas - Portfolio</title>
+    <link rel="shortcut icon" href="./images/CF_HTML_favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-    <body>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__item-container">
+        <img
+          src="images/jeremy_logo.jpg"
+          alt="logo"
+          class="page-header__item"
+        />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
 
-        <header class="page-header">
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list_item"
+              >About Me</a
+            >
+          </li>
 
-            <a href="index.html" class="page-header__item-container">
-                <img src="images/jeremy_logo.jpg" alt="logo" class="page-header__item">
-            </a>
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
 
-                    <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list_item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
 
-                    <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
-                    </li>
+    <section class="">
+      <h1>My Projects</h1>
 
-                    <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
+      <div class="project_list">
+        <div class="project">
+          <h2>What-2-Do App</h2>
+          <p>
+            This is an app built using React on the frontend, and AWS Lambda on
+            the backend. It displays a list of events, which is fetching the
+            events from Google Calendar API, that can be filtered by city or
+            number of events.
+          </p>
+          <a href="https://github.com/JNicholas54/what-2-do"
+            >See project on Github!</a
+          >
+        </div>
 
-                    <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                    </li>
+        <div class="project">
+          <h2>To-do list application</h2>
+          <p>This is my first to-do list application.</p>
+          <a href="https://github.com/JNicholas54/to-do-list_app"
+            >See this project on GitHub</a
+          >
+        </div>
 
-                </ul>
-            </nav>
-          </header>
-          <hr/>
+        <div class="project">
+          <h2>Pokedex</h2>
+          <p>A functioning Pokédex tool with DOM interaction</p>
+          <a href="https://github.com/JNicholas54/Pokedex_js"
+            >See project on Github!</a
+          >
+        </div>
 
-        <section class="">
-            <h1>My Projects</h1>
+        <div class="project">
+          <h2>Movie Api</h2>
+          <p>
+            REST API and Database using MongoDB, linked to my client side repo.
+          </p>
+          <a href="https://github.com/JNicholas54/Movie_API"
+            >See project on Github!</a
+          >
+        </div>
 
-            <div class="project_list">
+        <div class="project">
+          <h2>MyFlix App - client side</h2>
+          <p>
+            The client-side for an application called myFlix based on its
+            existing server-side code (REST API and database).
+          </p>
+          <a href="https://github.com/JNicholas54/myFlix_client3"
+            >See project on Github!</a
+          >
+        </div>
+      </div>
+    </section>
 
-                <div class="project">
-                    <h2>Empty project</h2>
-                    <p>
-                        future project description goes here
-                    </p>
-                    <a href="#">See project on Github!</a>
-                </div>
+    <footer class="page-footer">
+      <!--try to add some flair to this paragraph in the future, maybe use a span-->
+      <p>Find me on</p>
+      <div class="social_links">
+        <a href="https://github.com/JNicholas54" target="_blank"
+          ><img class="icon" src="images/github_icon.svg" alt="Github"
+        /></a>
+        <!-- adjust link to your personal profile -->
+        <a
+          href="https://https://www.linkedin.com/in/jeremy-nicholas-539425153/"
+          target="_blank"
+          ><img class="icon" src="images/linkedin_icon.svg" alt="Linkedin"
+        /></a>
+        <!-- adjust link to your personal profile -->
+        <a href="https://instagram.com/the_turf_wizard" target="_blank"
+          ><img class="icon" src="images/instagram_icon.svg" alt="Instagram"
+        /></a>
+      </div>
+    </footer>
+    <hr />
 
-                <div class="project">
-                    <h2>To-do list application</h2>
-                    <p>
-                        This is my first to-do list application.
-                    </p>
-                    <a href="#">See this project on GitHub</a>
-                </div>
-
-                <div class="project">
-                    <h2>Pokedex</h2>
-                    <p>
-                        A functioning Pokédex tool with DOM interaction
-                    </p>
-                    <a href="#">See project on Github!</a>
-                </div>
-
-                <div class="project">
-                    <h2>Empty project</h2>
-                    <p>
-                        future project description goes here
-                    </p>
-                    <a href="#">See this project on Github!</a>
-                </div>
-
-                <div class="project">
-                    <h2>Movie Api</h2>
-                    <p>
-                        REST API and Database using MongoDB, linked to my client side repo.
-                    </p>
-                    <a href="#">See project on Github!</a>
-                </div>
-
-                <div class="project">
-                    <h2>MyFlix App - client side</h2>
-                    <p>
-                        The client-side for an application called myFlix based on its existing server-side code (REST API and database).
-                    </p>
-                    <a href="#">See project on Github!</a>
-                </div>
-            </div>
-        </section>
-
-        <footer class="page-footer">
-            <!--try to add some flair to this paragraph in the future, maybe use a span-->
-            <p>
-                Find me on
-            </p>
-            <div class="social_links"> 
-                <a href="https://github.com/JNicholas54" target="_blank"><img class="icon" src="images/github_icon.svg" alt="Github"></a>
-                <!-- adjust link to your personal profile -->
-                <a href="https://https://www.linkedin.com/in/jeremy-nicholas-539425153/" target="_blank"><img class="icon" src="images/linkedin_icon.svg" alt="Linkedin"></a>
-                <!-- adjust link to your personal profile -->
-                <a href="https://instagram.com/the_turf_wizard" target="_blank"><img class="icon" src="images/instagram_icon.svg" alt="Instagram"></a>
-            </div> 
-        </footer>
-        <hr/>
-
-        <script src="js/tota11y.min.js"></script>
-    </body>
-
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
