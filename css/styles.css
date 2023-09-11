@@ -17,7 +17,7 @@ secondary color (red): #darkred;
   --primary-color-darker: var(--primary-color, 20%);
   --bg-color: #fff;
   --apricot: #FFC482;
-  --dark-red: #065535;
+  --dark-red: #9d0208;
   --button-color: #357b70;
   --button-color-lighter: var(--button-color, 15%);
   --box-shadow: rgb(0,0,0,0.3);
@@ -113,6 +113,7 @@ h1 {
   
   a:hover {
    background-position: 0;
+   color: #9d0208;
   }
   
   a:hover::before{
@@ -174,18 +175,8 @@ h1 {
 
 .profile_portrait:hover {
   opacity: 0.8;
-  animation: forwards;
+  transform: scale(1.1)
 }
-
-
-/* .icon:hover {    transition: 0.2s opacity, 0.5s background-color, 0.2s font-size; -----   opacity: 0.4;
-  border: 1px solid white;
-  border-radius: 3px;
-  opacity: 0.4;
-  border: 1px solid white;
-  border-radius: 1px;
-  border-bottom: 2px solid #000;
-} */
 
 button, .button {
     /* overwrites browser defaults and resets the border */
@@ -225,10 +216,6 @@ button, .button {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-}
-
-.navigation-list_item--active {
-    text-decoration: none;
 }
 
 * {
